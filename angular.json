@@ -28,9 +28,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.less",
+              "src/less/_variables.less",
+              "src/less/_mixins.less",
+              "src/less/normalize.less"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/less"
+              ]
+            }
           },
           "configurations": {
             "production": {

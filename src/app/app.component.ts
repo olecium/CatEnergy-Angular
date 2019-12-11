@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'catenergy-angular';
+
+
+  navToggle(event): void {
+    const menuButton = event.target;
+    const mainMenu = document.querySelector('.main-nav');
+
+    if (menuButton.classList.contains('main-nav__toggle--active')) {
+      mainMenu.classList.remove('main-nav--open');
+      menuButton.classList.remove('main-nav__toggle--active');
+    } else {
+      mainMenu.classList.add('main-nav--open');
+      menuButton.classList.add('main-nav__toggle--active');
+    }
+  }
+
 }

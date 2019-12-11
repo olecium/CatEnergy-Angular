@@ -1,0 +1,40 @@
+.info-fieldset{
+  margin: 35px 0 0;
+  padding-bottom: 20px;
+  border: 0 none;
+}
+.pick-form__instruction{
+  text-align: center;
+  font-family: @second-font;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 10px 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+}
+
+@media (min-width: @desktop-width){
+
+  .general-info__wrapper{
+    display: flex;
+  }
+  .info-fieldset{
+    flex-grow: 1;
+  }
+  .program-fieldset{
+    margin-left: 80px;
+    flex-grow: 1;
+    width: 395px;
+  }
+
+  .contact-fields__wrapper{
+    display: flex;
+  }
+  .contact-fields__wrapper .form-field{
+    flex-grow: 1;
+  }
+  .contact-fields__wrapper .form-field:last-child{
+    margin-left: 80px;
+  }
+}
